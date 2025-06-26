@@ -35,4 +35,18 @@ function media(nota1, nota2, nota3, nota4) {
     }
 }
 
+const mediaFinal = 8;
+const faltasFinais = 5;
+
+function passouDeAno(notaFinal, Faltas) {
+    // || = ou
+    // && = e
+    if (notaFinal < 7 || Faltas > 4) {
+        console.log("Esta de DP")
+    } else {
+        console.log("Passou!!")
+    }
+}
+
+passouDeAno(mediaFinal, faltasFinais)
 media(notaPrimeiroBi, notaSegundoBi, notaTerceiroBi, notaQuartoBi)
