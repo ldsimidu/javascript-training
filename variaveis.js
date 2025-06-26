@@ -39,14 +39,21 @@ media(notaPrimeiroBi, notaSegundoBi, notaTerceiroBi, notaQuartoBi)
 
 const mediaFinal = 8;
 const faltasFinais = 5;
+const advertenciasFinais = 0;
 
-function passouDeAno(notaFinal, Faltas) {
+function passouDeAno(notaFinal, Faltas, Advertencias) {
     // || = ou
     // && = e
     if (notaFinal < 7 || Faltas > 4) {
         console.log("Esta de DP")
     } else {
         console.log("Passou!!")
+    }
+
+    if (Faltas >= 2 && !Advertencias) {
+        console.log("Recebeu bonus")
+    } else {
+        console.log("Não recebeu bonus")
     }
 }
 
