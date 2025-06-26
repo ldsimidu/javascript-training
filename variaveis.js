@@ -35,6 +35,8 @@ function media(nota1, nota2, nota3, nota4) {
     }
 }
 
+media(notaPrimeiroBi, notaSegundoBi, notaTerceiroBi, notaQuartoBi)
+
 const mediaFinal = 8;
 const faltasFinais = 5;
 
@@ -49,4 +51,11 @@ function passouDeAno(notaFinal, Faltas) {
 }
 
 passouDeAno(mediaFinal, faltasFinais)
-media(notaPrimeiroBi, notaSegundoBi, notaTerceiroBi, notaQuartoBi)
+
+const chuva = false;
+
+if (!chuva) {
+    console.log("Não está chovendo. Pode sair de casa.");
+} else {
+    console.log("Está chovendo. Melhor ficar em casa.");
+}
