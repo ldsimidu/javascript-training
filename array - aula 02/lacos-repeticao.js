@@ -66,6 +66,7 @@ for (let indice = 0; indice < notas.length; indice++) {
 console.log(somaNotas)
 
 //for-of
+//const notas = [10, 9, 8, 7, 6, 5]
 let somaNotasA = 0
 
 for (let nota of notas) { //para cada nota em notas
@@ -73,3 +74,18 @@ for (let nota of notas) { //para cada nota em notas
 }
 
 console.log(somaNotasA)
+
+
+//forEach
+
+//executa uma função PARA CADA item dentro do array
+
+//const notas = [10, 9, 8, 7, 6, 5]
+let somaDasNotasB = 0;
+
+notas.forEach(function (nota) {
+    somaDasNotasB += nota;
+})
+
+const media = somaDasNotasB / notas.length;
+console.log(`A média das notas é ${media}`)
